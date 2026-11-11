@@ -1,6 +1,6 @@
 # Run the HBV policy model
 
-The [V1.0 release](https://github.com/Eternal2233/HBV/releases/tag/V1.0) contains the analysis code and data for *Population impact and opportunity costs of introducing a finite-course functional cure for chronic hepatitis B: a global dynamic modelling study*. Supplementary Data 1 contains the model and its inputs. Supplementary Data 2 contains the saved results.
+The [V1.1 release](https://github.com/Eternal2233/HBV/releases/tag/V1.1) contains the analysis code and data for *Population impact and opportunity costs of introducing a finite-course functional cure for chronic hepatitis B: a global dynamic modelling study*. Supplementary Data 1 contains the model and its inputs. Supplementary Data 2 contains the saved results.
 
 Run the setup commands from the `CHB_reproducibility` directory in Supplementary Data 1.
 
@@ -39,7 +39,7 @@ and native caches outside the extracted package.
 
 ## Verify the saved results
 
-The two V1.0 archives share the `CHB_reproducibility` directory. With both archives in that directory and the model environment active, run from `CHB_reproducibility`:
+Use the files from both V1.1 archives under the same `CHB_reproducibility` directory. With the model environment active, run from `CHB_reproducibility`:
 
     python verify_saved_results.py --output ../chb-results-check
 
