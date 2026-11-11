@@ -1,10 +1,8 @@
 # Run the HBV policy model
 
-Code and fitted inputs for *Population impact and opportunity costs of
-introducing a finite-course functional cure for chronic hepatitis B: a
-global dynamic modelling study*. Download the code and input ZIP from
-[the versioned release](https://github.com/Eternal2233/HBV/releases/tag/v2026.11.11-code-inputs) and extract it once. Run the commands
-below from the resulting CHB_reproducibility directory.
+The [V1.0 release](https://github.com/Eternal2233/HBV/releases/tag/V1.0) contains the analysis code and data for *Population impact and opportunity costs of introducing a finite-course functional cure for chronic hepatitis B: a global dynamic modelling study*. Supplementary Data 1 contains the model and its inputs. Supplementary Data 2 contains the saved results.
+
+Run the setup commands from the `CHB_reproducibility` directory in Supplementary Data 1.
 
 ## Restore and check the model inputs
 
@@ -37,8 +35,15 @@ reference West Pacific Region case into a new directory:
 
 Each selected configuration runs policies A–D from the frozen inputs. Use
 the case list to choose another region or scenario. Keep new calculations
-and native caches outside the extracted package. The saved-output comparison
-workflow uses the separate Supplementary Data 2 reviewer archive.
+and native caches outside the extracted package.
+
+## Verify the saved results
+
+The two V1.0 archives share the `CHB_reproducibility` directory. With both archives in that directory and the model environment active, run from `CHB_reproducibility`:
+
+    python verify_saved_results.py --output ../chb-results-check
+
+The script recomputes the reported summaries from the saved model arrays and conditional PSA draws. It compares them with the archived tables. The checksums for Supplementary Data 2 are in `SAVED_RESULTS_SHA256SUMS.txt`.
 
 ## Input provenance
 

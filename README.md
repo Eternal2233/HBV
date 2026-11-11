@@ -1,10 +1,8 @@
 # Hepatitis B policy modelling
 
-The [versioned release](https://github.com/Eternal2233/HBV/releases/tag/v2026.11.11-code-inputs) contains the latest analysis code, model
-inputs, environment lock and source checksums for *Population impact and
-opportunity costs of introducing a finite-course functional cure for
-chronic hepatitis B: a global dynamic modelling study*.
+The [V1.0 release](https://github.com/Eternal2233/HBV/releases/tag/V1.0) contains the analysis code, model inputs and saved results for *Population impact and opportunity costs of introducing a finite-course functional cure for chronic hepatitis B: a global dynamic modelling study*.
 
-Download CHB-code-inputs-v2026.11.11.zip, extract it, and follow [REPRODUCE.md](REPRODUCE.md) to
-restore the pinned upstream sources and run the model. The saved analysis
-outputs are supplied separately for peer review.
+- [Supplementary Data 1](https://github.com/Eternal2233/HBV/releases/download/V1.0/Supplementary-Data-1-V1.0.zip) contains the analysis code, model inputs, fitted parameters and environment requirements.
+- [Supplementary Data 2](https://github.com/Eternal2233/HBV/releases/download/V1.0/Supplementary-Data-2-V1.0.zip) contains the saved model outputs, conditional PSA draws, derived force-of-infection values and source tables.
+
+See the [reproduction guide](REPRODUCE.md) to run the model and verify the saved results.
